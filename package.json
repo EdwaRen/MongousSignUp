@@ -1,0 +1,28 @@
+{
+  "name": "captcha",
+  "version": "0.1.0",
+  "main": "server.js",
+  "private": true,
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.5.7",
+    "emailjs": "^1.0.12",
+    "emailjs-com": "^1.5.14",
+    "express": "^4.16.2",
+    "express-react-engine": "^1.0.0",
+    "express-validator": "^4.3.0",
+    "mongojs": "^2.4.1",
+    "react": "^16.1.1",
+    "react-async-script": "^0.9.1",
+    "react-dom": "^16.1.1",
+    "react-google-recaptcha": "^0.9.7",
+    "react-recaptcha": "^2.3.5",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

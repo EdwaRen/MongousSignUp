@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>My Express App</title>
+</head>
+<body>
+  <h1><%= title %></h1>
+  <div id="root"></div>
+
+
+  <% if(errors != undefined) { %>
+    <ul>
+      <% errors.forEach(function(error) { %>
+        <li><%= error.msg %></li>
+
+      <% }) %>
+    </ul>
+  <% } %>
+  <form method="POST" action="/users/add">
+    <label>First Name</label><br>
+    <input type ="text" name = "first_name"><br>
+    <label>Last Name</label><br>
+    <input type ="text" name = "last_name"><br>
+    <label>Email</label><br>
+    <input type ="text" name = "email"><br><br>
+    <input type = "submit" value = "Submit">
+
+  </form>
+  <ul>
+    <%users.forEach(function(user) { %>
+      <li><%= user.first_name %>
+        <%= user.last_name %>
+      </li>
+    <% }) %>
+  </ul>
+  <!-- <script src = "../src/index.js"></script> -->
+  <!-- <div id="root"></div> -->
+
+  HELLO THERE ITS A ME
+</body>
+</html>
